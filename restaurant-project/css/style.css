@@ -1,0 +1,134 @@
+:root{ 
+	--font-josefin:'Josefin Sans', sans-serif;
+	--font-roboto:'Roboto', sans-serif;
+  --font-orange:#ffc515;
+  --icon-color:#c49812;
+  --font-osawold:'Oswald', sans-serif;
+
+}
+*{
+  font-family: var(--font-roboto);
+  box-sizing: border-box;
+}
+/* header-section */
+.hero-section{
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/backgrounds/slider-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} 
+.reservation-h4{
+  font-size: 1.3em;
+}
+span{
+  color: var(--font-orange);
+  font-family: var(--font-osawold);
+}
+.active-links{
+  color: #fff;
+  font-size: 1.2em;
+}
+.active-links:hover{
+  color: var(--font-orange);
+}
+.box-model-div{
+  position: relative;
+  left: 100px;
+}
+.font-hero{
+  /* font-size: 4em; */
+  font-family: var(--font-josefin);
+}
+
+/* welcome-section */
+.p-top-bottom{
+  padding-top: 110px;
+  padding-bottom: 120px;
+}
+.sections-img{
+  height: 80px;
+}
+.welcome{
+    position: relative;
+}
+.welcome::before,
+.welcome::after {
+    display: flex;
+    content: "";
+    border-top: 4px solid var(--font-orange);
+    width: 96px;
+    align-items: center;
+    margin: 25px 1rem 0px 1rem;
+}
+/* testimonials-section */
+.testimonials-section{
+  background-image: url(../images/backgrounds/review-bg.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+}
+
+.main-icons i{
+  font-size: 4em;
+}
+.card-div i{
+  font-size: 3em;
+  color: var(--icon-color);
+  margin-top: 50px;
+}
+.menu-section{
+  background-image: url(../images/backgrounds/menu-bg.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120vh;
+}
+/* .menu-line div{
+} */
+
+.btn-div{
+  background: var(--font-orange);
+}
+/* footer-section */
+.contact-us{
+  position: absolute;
+  width: 100%;
+  top: -212px;
+  padding: 0px 15%;
+}
+
+.footer-bg{
+  background-image: url(../images/backgrounds/footer-bg.jpg);
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.bite-div i{
+  font-size: 3em;
+  color: var(--icon-color);
+}
+input ,textarea{
+  background: #EEF5F6;
+}
+.copyright{
+  position: absolute;
+  width: 100%;
+  bottom:0px;
+  left: 0;
+  color: #777777;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+@media screen and (min-width:320px) and (max-width:576px){
+  .welcome::before,
+.welcome::after{
+  display: none;
+}
+  
+}

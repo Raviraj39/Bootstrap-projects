@@ -1,0 +1,288 @@
+:root{
+	--bg-nav-color:#1A0F22;
+	--bg-border-button:#6b54b6;
+  --text-heebo:'Heebo', sans-serif;
+	--text-rajdhani:'Rajdhani', sans-serif;
+}
+
+
+.navbg{
+	background-color: var(--bg-nav-color);
+}
+
+.hero-section{
+	background-image: url(../images/background/main-home-rev-1.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+  background-color: var(--bg-nav-color);
+}
+
+nav{
+	font-family: var(--text-rajdhani);
+	font-size: 1.3em;
+	font-weight: 500;
+}
+
+.hero-button{
+  --border: 2px;    /* the border width */
+  --slant: 0.9em;   /* control the slanted corners */
+  --color:#6b54b6 ; /* the color */
+  font-size: 1.2em;
+  border: none;
+  font-family: var(--text-rajdhani);
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  padding: 15px 60px;
+  background: 
+     linear-gradient(to bottom left,var(--color)  50%,#0000 50.1%) top right,
+     linear-gradient(to top   right,var(--color)  50%,#0000 50.1%) bottom left;
+  background-size: calc(var(--slant) + 1.0*var(--border)) calc(var(--slant) + 1.0*var(--border));
+  background-repeat: no-repeat;
+  box-shadow:
+    0 0 0 	0px inset var(--s,#0000),
+    0 0 0 var(--border) inset var(--color);
+  clip-path: 
+      polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
+              100% 100%, var(--slant) 100%,0 calc(100% - var(--slant))
+             );
+}
+.hero-button2{
+	--border: 2px;    /* the border width */
+	--slant: 0.9em;   /* control the slanted corners */
+	--color:#6b54b6 ; /* the color */
+	font-size: 1.2em;
+	border: none;
+	font-family: var(--text-rajdhani);
+	font-weight: 500;
+	cursor: pointer;
+	color: #fff;
+	padding: 15px 60px;
+
+  background: 
+     linear-gradient(to bottom left,var(--color)  50%,#0000 50.1%) top right,
+     linear-gradient(to top   right,var(--color)  50%,#0000 50.1%) bottom left;
+  background-repeat: no-repeat;
+  box-shadow:
+    0 0 0 	0px inset var(--s,#0000),
+    0 0 0 var(--border) inset var(--color);
+  clip-path: 
+      polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
+              100% 100%, var(--slant) 100%,0 calc(100% - var(--slant))
+             );
+}
+
+.hero-button:focus-visible {
+  outline-offset: calc(-1*var(--border));
+  outline: var(--border) solid #000c;
+  clip-path: none;
+  background-size: 0 0;
+}
+.hero-button:hover,
+.hero-button:active{
+  background-size: 100% 100%;
+  color: #fff;
+  --t: 0.2s 0.1s;
+}
+.hero-button:active {
+  --s: #0005;
+  transition: none;
+}
+.scroll-down{
+	color: #fff;
+	position: absolute;
+	left: 43%;
+	margin-top: 18%;
+	box-sizing: border-box;
+	transform: rotate(-90deg);
+	transform-origin: 50% 50%;
+	font-size: 0.9em;
+	font-family: var(--text-rajdhani);
+	font-weight: 600;
+	letter-spacing: 0.2em;
+}
+.tournament-section{
+  background-image: url(../images/background/main-home-bckgd-img.jpg);
+  background-position: 0 0,
+  center;
+	background-size: contain;
+	background-repeat: repeat;
+	height:100%;
+	width: 100%;
+}
+.img-card{
+  z-index: 1;
+  padding-top: 20px;
+}
+.winner-img {
+    z-index: 0;
+}
+.round-div{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transform: translate(-50%,-50%);
+  background-color:#6b54b67e ;
+}
+.round-div img{
+  margin-top: 10px;
+  margin: 10px auto 0px auto;
+  width: 70px;
+  color: #fff;
+}
+
+h1,h4,h2,li,h3{
+  font-family: var(--text-rajdhani);
+  font-weight: 600;
+}
+.para-date{
+  font-size: 1em;
+  color: #6b54b6;
+  font-weight: 600;
+  font-family: var(--text-rajdhani);
+}
+.matches{
+  top: 80px;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: var(--text-rajdhani);
+  transform: rotate(-90deg);
+}
+.header-text{
+  margin-left: 80px;
+}
+.box-background{
+  --border: 2px;    /* the border width */
+	--slant: 2em;   /* control the slanted corners */
+	--color:#6b54b635 ;
+    overflow:hidden;
+    background: 
+     linear-gradient(to bottom left,var(--color)  50%,#0000 50.1%) top right,
+     linear-gradient(to top   right,var(--color)  50%,#0000 50.1%) bottom left;
+  background-repeat: no-repeat;
+  padding: 10px 40px 10px 20px;
+  clip-path: 
+      polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
+              100% 100%, var(--slant) 100%,0 calc(100% - var(--slant))
+             );
+             z-index: 0;
+}
+/* .team-img{
+    position:absolute;
+    left: 80px;
+    top: -50px;
+      z-index:4;
+}
+.team-img2{
+   position:absolute;
+    right: 100px;
+    top: -50px;
+      z-index:4;
+} */
+
+/* blog-section */
+.blog-main{
+  overflow-x: hidden;
+  display: flex ;
+  flex-direction: row;
+}
+.blog-caption{
+  position: absolute;
+  bottom: 0px;
+  padding: 20px;
+}
+/* card-section */
+.card-body{
+  background-color:#271334;
+  color: #fff;
+}
+.card-main{
+  bottom:10%;
+}
+
+.textarea,input[type=text],input[type=email]{
+  background-color: #22152c;
+  padding: 24px 33px;
+  font-size: 1em;
+  color: #c3bace;
+  border-radius: 0;
+  border:none;
+  box-sizing: border-box;
+}
+.main-news{
+  max-width: 900px;
+  padding: 150px 0px;
+}
+.subscribe-btn{
+  font-family: var(--text-rajdhani);
+  --border: 2px;    /* the border width */
+	--slant: 1em;   /* control the slanted corners */
+	--color:#FE3146 ;
+  color: #fff;
+    overflow:hidden;
+    background: 
+     linear-gradient(to bottom left,var(--color)  50%,#0000 50.1%) top right,
+     linear-gradient(to top   right,var(--color)  50%,#0000 50.1%) bottom left;
+  background-repeat: no-repeat;
+  padding: 10px 40px 10px 20px;
+  clip-path: 
+      polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
+              100% 100%, var(--slant) 100%,0 calc(100% - var(--slant))
+             );
+}
+footer div:first-child{
+  background-color:#150f1a;
+}
+.footer2{
+ 
+  background-color: #100d12;
+}
+.footer2 div{
+  
+  padding: 20px 5%;
+}
+
+@media screen and (min-width:320px) {
+  .team-img{
+    position:absolute;
+    left: 20px;
+    top: -43px;
+    z-index:4;
+}
+.team-img2{
+   position:absolute;
+    right: 44px;
+    top: -40px;
+    z-index:4;
+}
+}
+@media screen and (min-widht:576px) {
+  .team-img{
+    position:absolute;
+    left: 80px;
+    top: -20px;
+}
+.team-img2{
+   position:absolute;
+    right:44px;
+    top: -20px;
+}
+}
+
+@media screen and (min-width:992px) {
+  .team-img{
+    position:absolute;
+    left: 80px;
+    top: -50px;
+}
+.team-img2{
+   position:absolute;
+    right: 100px;
+    top: -50px;
+}
+  
+}
