@@ -1,0 +1,696 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+	--headblue:#57ccc3;
+	--gray-color:#828282;
+	--text-color: #353535;
+	--btn-bg-red:#fd556d;
+	--title-text:#404040;
+	--footer-color:#26292d;
+}
+
+/* nav-section */
+.desktop{
+	display: none;
+}
+.div-mobile{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	height: 60px;
+	margin: 0px 5%;
+}
+section{
+	color: var(--text-color);
+}
+
+.blue-text{
+	color: var(--headblue);
+}
+.plastic p{
+	font-size: 0.7em;
+	color: var(--gray-color);
+}
+.hamburger i{
+	font-size: 1.3em;
+	color: #353535;
+}
+.hero-section{
+	background-image: url("../images/background/home_slider.jpg");
+	background-position: center;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.hero-main{
+	display: flex;
+	flex-direction: column;
+	margin: 0px 5%;
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+}
+.hero-main h3{
+	color: var(--headblue);
+	font-weight: 600;
+	font-size: 1.3em;
+}
+.hero-main h1{
+	color: #404040;
+	font-weight: 600;
+	font-size: 2.3em;
+}
+.para-text{
+	color: var(--gray-color);
+	font-size: 0.8em;
+	margin-top: 20px;
+	line-height: 2em;
+	text-align: left;
+	margin-right: 20%;
+}
+.hero-button{
+	margin-top:20px;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.hero-read-more{
+	padding: 10px 20px;
+	/* margin-right: 10px; */
+	background-color: var(--btn-bg-red);
+	border: none;
+	border-radius: 30px;
+}
+.hero-read-more a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 0.9em;
+	font-weight: 600;
+}
+.apointment-btn{
+	padding: 12px 18px;
+	margin-right: 10px;
+	background-color: #fff;
+	border: 1px solid var(--headblue);
+	border-radius: 30px;
+}
+.apointment-btn a{
+	text-decoration: none;
+	color: var(--headblue);
+	font-weight: 700;
+	font-size: 0.9em;
+}
+/* make an Appointment section */
+.apointment-section{
+	margin:100px 5%;
+}
+.header-h1{
+	font-size: 2.3em;
+	font-weight: 600;
+}
+.main-child-apointment{
+	margin:20px 0px;
+}
+.main2{
+	margin :50px 0px;
+}
+.main2  h2{
+	font-size: 2em;
+}
+.main2 h3{
+	font-size: 1em;
+}
+.form-appointment{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 5% 5%;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.formheader{
+	width: 300px;
+	height: 80px;
+	background-color: var(--headblue);
+	line-height: 80px;
+    text-align: center;
+}
+
+.formheader h2{
+	color: #fff;
+}
+.form-main{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 50px 0px;
+}
+.form-main input{
+	width: 40%;
+	height: 52px;
+	margin:20px 0px;
+}
+
+
+/* why-section */
+.main-why-section {
+	background-color: #EEF3F6;
+	border: 0px;
+}
+.why-section{
+	display: flex;
+	flex-direction: column;
+	margin: 100px 3% 0px 3%;
+}
+.why-image{
+	background-image: url("../images/illustrations/why_1.jpg");
+	height:40vh;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	order: 2;
+	margin: 0px;
+}
+.why-div-main{
+	order: 1;
+}
+.icons-why-div{
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	align-self: center;
+	background-color: var(--headblue);
+	box-sizing: border-box;
+	margin-right: 30px;
+}
+.icons-why-div img{
+	width: 80%;
+	margin-top: 10px;
+	margin-left: 8px;
+}
+.why-list{
+	margin :50px 0px;
+}
+.why-div-main >p{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.why-icons-div{
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 0px;
+}
+.why-image img{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+
+/* Appointment-number */
+
+.appointment-main-div{
+	background: #fd556d;
+	padding: 50px 3% 50px 3%;
+}
+.app-head h1{
+	color: #fff;
+	font-size: 1.8em;
+}
+.app-head p{
+	color: #fff;
+}
+.app-number h1{
+	color: #fff;
+}
+.app-number{
+	margin: 40px auto;
+	padding: 10px 20px;
+	background-color: #ee4860;
+	border-radius: 20px;
+	text-align: center;
+}
+/* Services-section */
+
+.Services-section{
+	margin:100px 5%;
+	text-align: center;
+}
+.figure-services{
+	display: flex;
+	flex-direction: column;
+}
+.figure-services figure{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:40px 0px;
+}
+.para-text2{
+	color: var(--gray-color);
+	font-size: 0.8em;
+	line-height: 2em;
+	margin-top: 20px;
+}
+.title{
+	font-size: 1.2em;
+    font-weight: 600;
+    color: var(--title-text);
+    line-height: 1.2;
+    margin-top: 17px;
+}
+
+.icon-container{
+	width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    background: #6bdbd2;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.icon-container img{
+	width: 100%;
+}
+
+/* discount-section */
+.discount-section{
+	background-image: url("../images/background/extra.jpg");
+	background-position: center;
+	height: 90vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 5%  10% 10% 5%;
+}
+.discount{
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: flex-end;
+
+}
+.discount-main{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 20px 20px 0px 20px;
+	background-color: #fff;
+	box-sizing: border-box;	
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.first-class{
+	display: flex;
+	flex-direction: row;
+	align-items: end;
+	justify-content: start;
+}
+.sup-h1{
+	color: var(--headblue);
+	font-size: 3em;
+	font-weight: 700;
+}
+sup{
+	color: var(--headblue);
+	font-size: 1em;
+}
+.discounth2{
+	font-size: 1.3em;
+	margin-right: 50px;
+	color: var(--gray-color);
+}
+.only{
+	font-size: 3em;
+	font-weight: 600;
+}
+.discount-btn{
+	margin: 20px 0px;
+	text-align: left;
+}
+.subscribe-newsletter{
+	background-image: url("../images/background/newsletter.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 40vh;
+	width: 100%;
+}
+.subscribe-newsletter-main{
+	margin: 0px 10%;
+	padding: 30px;
+	text-align: center;
+}
+.subscribe-newsletter-main h1{
+	color: #fff;
+	font-size: 2em;
+}
+.input-box{
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+	box-sizing: border-box;
+	margin-top: 50px;
+	border: 2px solid #fff;
+	position: relative;
+	color: #fff;
+}
+.input-box input{
+	padding: 10px 0px;
+	border: none;
+	color: #fff;
+	background:transparent;
+	padding-left: 20px;
+	height: 40px;
+}
+.input-box >input::placeholder{
+	color: #fff;
+}
+.btn-news{
+	align-items: flex-end;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/* footer-section */
+footer{
+	background-color: var(--footer-color);
+	color: #fff;
+}
+.main-footer{
+	margin: 0px 5%;
+	display: flex;
+	flex-direction: column;
+}
+.footer-div{
+	margin:50px 0px;
+}
+.footer-div .footer_title{
+	margin-top: 20px;
+}
+.footer-div li{
+	list-style-type: none;
+}
+.footer_title {
+    font-size: 1em;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 1.2;
+}
+.location_title {
+    font-size: 1em;
+    font-weight: 500;
+    color: #57ccc3;
+	margin-top: 20px;
+}
+.para-textf{
+	color: var(--gray-color);
+	font-size: 0.8em;
+	line-height: 2em;
+	text-align: left;
+}
+.timing-div{
+	outline: 2px solid #fff;
+	padding: 5% 10%;
+}
+.days-timing{
+	margin-top: 20px;
+}
+.days-timing li{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer-last{
+	width: 100%;
+	background-color:  #181a1d;
+}
+.contain-footer{
+	padding: 40px 5%;
+}
+.last-footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+}
+.last-footer li{
+	list-style: none;
+	padding: 10px 5px;
+}
+.last-footer li a{
+	text-decoration: none;
+	color: var(--gray-color);
+	font-size: 0.8em;
+}
+@media screen and (min-width:768px) {
+	.hero-main h3 {
+		font-weight: 700;
+		font-size: 2em;
+	}
+	.hero-main h1 {
+   		 font-size: 3.2em;
+	}
+	.para-text{
+		font-size: 1em;
+		margin: 20px 0px 0px 0px;
+	}
+	.hero-read-more,.apointment-btn{
+		padding: 15px 30px;
+		font-size: 1.em;
+	}
+	.hero-section{
+		height: 94vh;
+	}
+	.main-child-apointment{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.header-h1{
+		font-size: 3em;
+	}
+	.main2{
+		margin:50px 50px 50px 0px;
+	}
+	.main2 h2{
+		font-size: 3em;
+	}
+	.main2 h3{
+		font-size: 1.4em;
+	}
+	.new-hero-app{
+		/* width: 100%; */
+		margin: 0px 5%;
+	}
+	.why-icons-div{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+	.why-image{
+		height: 60vh;
+	}
+	.appointment-main-div{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.app-number{
+		width: fit-content;
+		margin:30px 0px;
+	}
+	.app-head h1{
+		font-size: 2.5em;
+	}
+	.app-number h1{
+		font-size: 2.4em;
+	}
+	.figure-services{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.figure-services figure{
+		width: 44%;
+		margin:70px 20px;
+	}
+	.discount-main{
+		width: 40vw;
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 20px;
+	}
+	.discount-section{
+		height: 50vh;
+
+	}
+	.discount-btn{
+		width: fit-content;
+	}
+	.contain-footer{
+		display: flex;
+		flex-direction: row;
+	}
+	.discount {
+		display: flex;
+		flex-direction: row;
+		align-items: start;
+		justify-content: flex-end;
+	}
+}
+@media screen and (min-width:992px){
+	.mobile-nav{
+		display: none;
+	}
+	.desktop{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		height: 70px;
+	}
+	.nav-desktop-main{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+		justify-content: space-around;
+	}
+	.nav-div{
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+	}
+	.nav-div li{
+		padding: 20px 10px;
+		list-style-type: none;
+	}
+	.nav-div li a{
+		text-decoration: none;
+		color: #000;
+	}
+	.blue-btn{
+		padding: 15px 30px;
+		background-color: var(--headblue);
+		border: none;
+		border-radius: 30px;
+	}
+	.blue-btn a{
+		font-size: 0.9em;
+		color: #fff;
+		text-decoration: none;
+	}
+	.nav-icon-div{
+		display: flex;
+		flex-direction: row;
+	}
+	.nav-icons{
+		padding-left: 20px;
+	}
+	.nav-icons a{
+		font-size: 0.9em;
+		color: #000;
+		text-decoration: none;
+		border: 10px solid #e6ebf1;
+		border-radius: 50%;
+		font-size: 1em;
+	}
+	.hero-main{
+		width: 40%;		
+	}
+	.apointment-section{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin:70px 10%;
+	}
+	.main-apointment{
+		width: 40%;
+	}
+	.form-appointment{
+		width: 50%;
+		padding: 0%;
+		height: fit-content;
+	}
+	.why-section{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin: 0px 10% 0 0;
+	}
+	.why-div-main{
+		order: 1;
+		width: 50%;
+		margin-bottom: 0%;
+	}
+	.why-image{
+		order: 0;
+		height: 100vh;
+		width: 50%;
+	}
+	.appointwo{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		margin: 20px 0%;
+		width: 100%;
+	}
+	.app-number{
+		margin: 0;
+	}
+	.figure-services{
+		display: flex;
+		flex-direction: row;
+		margin:100px 10%;
+	}
+	.figure-services figure{
+		width: 30%;
+		margin:30px 0px;
+	}
+	.discount-main{
+		width: 35%;
+	}
+	.sup-h1{
+	font-size: 5em;
+	}
+	.only{
+		font-size: 5em;
+	}
+	.discount-section{
+		height: 80vh;
+	}
+	.main-footer{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin: 0px 10%;
+	}
+	.footer-div{
+		width: 20%;
+		padding: 20px 30px;
+	}
+	.contain-footer{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0px 5%;
+	}
+	.btn-news{
+		padding: 20px 30px;
+		align-self: center;
+	}
+}
+

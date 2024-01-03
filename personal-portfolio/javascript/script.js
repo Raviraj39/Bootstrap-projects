@@ -1,4 +1,4 @@
-
+  AOS.init();
 var app = document.getElementById('typewritter');
 
 var typewriter = new Typewriter(app, {
@@ -13,9 +13,12 @@ typewriter.typeString(' Frontend Developer')
     .deleteAll()
     .typeString('React Developer')
     .pauseFor(2000)
+    .deleteAll()
+    .typeString('Java Developer')
+    .pauseFor(2000)
     .start();
 
-anime.timeline({loop: true})
+anime.timeline({loop: false})
   .add({
     targets: '.ml15 .word',
     scale: [14,1],
@@ -23,10 +26,6 @@ anime.timeline({loop: true})
     easing: "easeOutCirc",
     duration: 1000,
     delay: (el, i) => 1000 * i
-  }).add({
-    targets: '.ml15',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
+  })
+  ;
+

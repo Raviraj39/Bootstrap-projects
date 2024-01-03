@@ -1,0 +1,208 @@
+:root{
+	--nav-one-bg:#242434;
+	--orange-clor:#db9457;
+	--font-raleway:'Raleway', sans-serif;
+	--font-playfait:'Playfair Display', serif;
+	--footer-bg:#101020;
+}
+
+
+
+/* nav-section */
+.nav-one{
+	background: var(--nav-one-bg);
+	
+}
+.nav-p-tag-div p{
+	font-family: var(--font-raleway);
+	font-size: 0.9em;
+	font-weight: 500;
+}
+.icons-div a i{
+	text-decoration: none;
+	font-size: 1em ;
+	color: #fff;
+}
+.logo-image img{
+	width: 100px;
+}
+
+.dropdown a{
+	text-decoration: none;
+	color:#000;	
+	font-size: 0.8em;
+	font-weight: 500;
+	font-family: var(--font-raleway);
+}
+.nav-item a{
+	color:#000;	
+	font-size: 0.8em;
+	font-weight: 500;
+	font-family: var(--font-raleway);
+} 
+
+/* hero-section */
+.hero-section{
+	background-image: url(../images/background/coffeebean-hero-espresso.jpg);
+	background-repeat: no-repeat;
+	background-size:cover ;
+	background-position: center ;
+	height: 100vh;
+}
+.our-mission{
+	position: absolute;
+    text-align: center;
+    top: -16px;
+    bottom: 0;
+    left: -40px;
+    height: 25px;
+    margin: auto;
+	transform-origin: 8px 50%;
+	transform: rotate(-90deg) translate(-50%,50%);
+}
+.hero-span{
+	color:var(--orange-clor);
+	font-family: var(--font-raleway);
+}
+.main-h1{
+	font-size: 3em;
+	font-family: var(--font-playfait);
+	letter-spacing: 4px;
+	font-weight: 500;
+}
+.main-hero p{
+	color: #3A3A3B;
+	font-size: 1em;
+	font-family: var(--font-raleway);
+	font-weight: 400;
+	text-align: justify;
+}
+.line{
+	width: 50px;
+	border: 1px solid var(--orange-clor);
+}
+
+/* FEATURED-product-section */
+.line-vertical{
+	width: 2px;
+	height: 50px;
+	border: 3px solid var(--orange-clor);
+}
+.feature-main{
+	background-image: url(../images/background/boxes.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 65vh;
+	margin: 40px 10%;
+}
+.cards-div{
+	padding: 40px 8.7%;
+}
+.h4-div-cart{
+	font-family: var(--font-playfait);
+	font-weight: 500;
+	font-size: 1.2em;
+}
+.price-div{
+	font-family: var(--font-raleway);
+	font-weight: 400;
+	font-size: 0.8em;
+}
+.button-hover{
+	display: none;
+}
+.cards-div :hover .button-hover{
+	display: block;
+	color:var(--orange-clor);
+	font-family: var(--font-raleway);
+}
+.cards-div button{
+	background-color: transparent;
+}
+.select-btn{
+	border: 2px solid var(--orange-clor);
+}
+.bottle-section{
+	background-image: url(/images/background/Cold-Brew.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.time-to-chill{
+	position: absolute;
+    text-align: center;
+    top: -16px;
+    bottom: 0;
+	right: -130px;
+    height: 25px;
+    margin: auto;
+	transform-origin: 8px 50%;
+	transform: rotate(-90deg) translate(-50%,50%);
+}
+.box-main{
+	box-sizing: border-box;
+}
+.boxes{
+	height: 90vh;
+}
+
+.box-div{
+	position: absolute;
+  	top: 70%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+.meet-h1{
+	font-size: 2em;
+	font-family: var(--font-playfait);
+	font-weight: 500;
+}
+.meet-h4{
+	font-family: var(--font-raleway);
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-size: 1em;
+}
+/* coffe-section */
+.coffe-section{
+	background-image: url(../images/background/coffeebean-hero-coffee-cup.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 70vh;
+}
+/* footer */
+footer{
+	background-color: var(--footer-bg);
+	font-family: var(--font-raleway);
+	font-size: 1.1em;
+	font-weight: 400;
+}
+.footer-list li{
+	margin: 10px 0px;
+}
+.footer-icons a{
+	text-decoration: none;
+	padding: 0px 10px;
+}
+.footer-icons a i{
+	font-size: 1.5em;
+	color: #fff;
+}
+.last-footer img{
+	width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
